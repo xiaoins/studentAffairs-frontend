@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 学工管理系统 (Student Affairs Management System)
 
 这是一个基于 Vue 3 (前端) 和 Spring Boot (后端) 构建的现代化学生事务管理系统。
@@ -145,3 +146,7 @@
         │   └── index.html    # 应用主HTML文件
         └── vue.config.js     # Vue CLI配置文件 (包含代理设置)
 ``` 
+=======
+# studentAffairs-frontend
+基于vue3+springboot开发的学工系统网站,此文件是vue3的前端
+>>>>>>> 14fbe91b3391f63a6496b2bb948299eb50cb085a
