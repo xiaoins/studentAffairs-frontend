@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sulei.mapper.ActivityMapper">
+
+    <!-- 查询所有活动 -->
+    <select id="getAllActivities" resultType="com.sulei.pojo.Activity">
+        select
+            active_id as activeId,
+            activity_name as activityName,
+            publish_date as publishDate,
+            end_date as endDate,
+            student_review as studentReview
+        from
+            active;
+    </select>
+
+    <!-- 新增活动 -->
+    <insert id="addActivity" useGeneratedKeys="true" keyProperty="activeId">
+        insert into active(activity_name, publish_date, end_date, student_review)
+        values(#{activityName}, #{publishDate}, #{endDate}, #{studentReview});
+    </insert>
+
+    <!-- 更新活动信息 -->
+    <update id="updateActivity">
+        update active
+        set
+            activity_name = #{activityName},
+            publish_date = #{publishDate},
+            end_date = #{endDate},
+            student_review = #{studentReview}
+        where active_id = #{activeId};
+    </update>
+
+    <!-- 删除活动信息 -->
+    <delete id="deleteActivity">
+        delete from active where active_id = #{id};
+    </delete>
+</mapper> 

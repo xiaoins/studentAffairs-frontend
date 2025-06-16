@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sulei.mapper.CourseMapper">
+
+    <resultMap id="CourseVoResultMap" type="com.sulei.pojo.CourseVo">
+        <id property="id" column="id"/>
+        <result property="courseName" column="course_name"/>
+        <result property="courseCode" column="course_code"/>
+        <result property="teacherName" column="teacher_name"/>
+        <result property="credits" column="credits"/>
+    </resultMap>
+
+    <select id="getCourseList" resultType="com.sulei.pojo.CourseVo">
+        SELECT
+            id,
+            course_name,
+            course_code,
+            teacher_name,
+            credits
+        FROM
+            course
+        <where>
+            <if test="query != null and query != ''">
+                course_name LIKE CONCAT('%', #{query}, '%')
+                OR course_code LIKE CONCAT('%', #{query}, '%')
+                OR teacher_name LIKE CONCAT('%', #{query}, '%')
+            </if>
+        </where>
+        ORDER BY
+            id
+    </select>
+
+    <insert id="add" parameterType="com.sulei.pojo.Course">
+        INSERT INTO course (course_name, course_code, teacher_name, credits)
+        VALUES (#{courseName}, #{courseCode}, #{teacherName}, #{credits})
+    </insert>
+
+    <delete id="delete" parameterType="java.lang.Integer">
+        DELETE FROM course WHERE id = #{id}
+    </delete>
+
+    <update id="update" parameterType="com.sulei.pojo.Course">
+        UPDATE course
+        SET
+            course_name = #{courseName},
+            course_code = #{courseCode},
+            teacher_name = #{teacherName},
+            credits = #{credits}
+        WHERE
+            id = #{id}
+    </update>
+
+</mapper> 

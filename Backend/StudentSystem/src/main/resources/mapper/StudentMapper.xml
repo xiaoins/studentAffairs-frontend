@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sulei.mapper.StudentMapper">
+    <select id="getAllStudents" resultType="com.sulei.pojo.Student">
+        select
+            id,
+            student_id as studentId,
+            name, gender,
+            college as collegeName,
+            major as majorName,
+            class_name,
+            enrollment_date,
+            graduation_date
+        from
+            student;
+    </select>
+
+    <insert id="addStudent" useGeneratedKeys="true" keyProperty="id">
+        insert into student(student_id, name, gender, college, major, class_name, enrollment_date, graduation_date)
+        values(#{studentId}, #{name}, #{gender}, #{collegeName}, #{majorName}, #{className}, #{enrollmentDate}, #{graduationDate});
+    </insert>
+
+    <!-- 更新学生信息 -->
+    <update id="updateStudent">
+        update student
+        set
+            student_id = #{studentId},
+            name = #{name},
+            gender = #{gender},
+            college = #{collegeName},
+            major = #{majorName},
+            class_name = #{className},
+            enrollment_date = #{enrollmentDate},
+            graduation_date = #{graduationDate}
+        where id = #{id};
+    </update>
+
+    <!-- 删除学生信息 -->
+    <delete id="deleteStudent">
+        delete from student where id = #{id};
+    </delete>
+
+    <update id="update" parameterType="com.sulei.pojo.Student">
+        update student set name=#{name}, student_id=#{studentId}, gender=#{gender}, class_name=#{className} where id=#{id}
+    </update>
+
+    <select id="findByStudentId" resultType="com.sulei.pojo.Student">
+        select * from student where student_id = #{studentId}
+    </select>
+
+    <select id="findStudentById" resultType="com.sulei.pojo.Student">
+        select *
+        from student
+        where id = #{id}
+    </select>
+</mapper>

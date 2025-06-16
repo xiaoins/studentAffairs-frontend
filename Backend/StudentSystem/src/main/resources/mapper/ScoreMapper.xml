@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sulei.mapper.ScoreMapper">
+
+    <resultMap id="ScoreVoResultMap" type="com.sulei.pojo.ScoreVo">
+        <id property="id" column="sid"/>
+        <result property="score" column="score"/>
+        <result property="studentId" column="student_business_id"/>
+        <result property="studentName" column="student_name"/>
+        <result property="className" column="class_name"/>
+        <result property="courseId" column="course_id"/>
+        <result property="courseName" column="course_name"/>
+        <result property="teacherName" column="teacher_name"/>
+    </resultMap>
+
+    <select id="getScoreList" resultMap="ScoreVoResultMap">
+        SELECT
+            sc.id AS sid,
+            sc.score,
+            s.student_id AS student_business_id,
+            s.name AS student_name,
+            s.class_name,
+            c.id AS course_id,
+            c.course_name,
+            c.teacher_name
+        FROM
+            score sc
+                JOIN
+            student s ON sc.student_id = s.student_id
+                JOIN
+            course c ON sc.course_id = c.id
+        <where>
+            <if test="name != null and name != ''">
+                s.name LIKE CONCAT('%', #{name}, '%')
+            </if>
+        </where>
+        ORDER BY
+            sc.id
+    </select>
+
+    <insert id="add" parameterType="com.sulei.pojo.Score">
+        INSERT INTO score (score, student_id, course_id)
+        VALUES (#{score}, #{studentId}, #{courseId})
+    </insert>
+
+    <delete id="delete" parameterType="java.lang.Integer">
+        DELETE FROM score WHERE id = #{id}
+    </delete>
+
+    <update id="update" parameterType="com.sulei.pojo.Score">
+        UPDATE score
+        SET
+            score = #{score},
+            student_id = #{studentId},
+            course_id = #{courseId}
+        WHERE
+            id = #{id}
+    </update>
+
+</mapper> 

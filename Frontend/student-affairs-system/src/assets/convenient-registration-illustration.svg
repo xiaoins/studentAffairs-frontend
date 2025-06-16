@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="250" height="150" viewBox="0 0 250 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Convenient Registration Illustration v2</title>
+    <defs>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#90CAF9" offset="0%"></stop>
+            <stop stop-color="#64B5F6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Convenient-Registration-Illustration-v2">
+            <rect id="Background" fill="#E3F2FD" x="0" y="0" width="250" height="150" rx="8"></rect>
+            
+            <!-- Main Scene: Progress Circle with Percentage -->
+            <g id="Progress" transform="translate(75.000000, 25.000000)">
+                <circle id="Circle-Outer" fill="#BBDEFB" cx="50" cy="50" r="45"></circle>
+                <circle id="Circle-Inner" fill="url(#linearGradient-1)" cx="50" cy="50" r="40"></circle>
+                <text id="Percent" font-family="Arial-BoldMT, Arial" font-size="24" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="18" y="58">29%</tspan>
+                </text>
+            </g>
+
+            <!-- Abstract shapes -->
+            <rect id="Abstract-1" fill="#BBDEFB" opacity="0.5" x="10" y="10" width="30" height="30" rx="5"></rect>
+            <circle id="Abstract-2" fill="#BBDEFB" opacity="0.5" cx="220" cy="130" r="20"></circle>
+        </g>
+    </g>
+</svg> 

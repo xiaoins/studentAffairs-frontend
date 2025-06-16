@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="250" height="150" viewBox="0 0 250 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Activity Card Illustration v3 - Cartoon People</title>
+    <defs>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#81D4FA" offset="0%"></stop>
+            <stop stop-color="#4FC3F7" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Activity-Card-Illustration-v3">
+            <rect id="Background" fill="#E1F5FE" x="0" y="0" width="250" height="150" rx="8"></rect>
+            
+            <!-- Main Scene: Group of Cartoon People -->
+            <g id="Cartoon-People" transform="translate(50.000000, 20.000000)">
+                <!-- Person 1 -->
+                <g id="Person-1">
+                    <rect fill="url(#linearGradient-1)" x="0" y="50" width="30" height="60" rx="5"></rect>
+                    <circle fill="url(#linearGradient-1)" cx="15" cy="40" r="15"></circle>
+                    <circle fill="#333333" cx="12" cy="38" r="1.5"></circle>
+                    <circle fill="#333333" cx="18" cy="38" r="1.5"></circle>
+                    <path d="M12,45 C12,45 15,48 18,45" stroke="#333333" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+                </g>
+                
+                <!-- Person 2 -->
+                <g id="Person-2">
+                    <rect fill="url(#linearGradient-1)" x="40" y="40" width="35" height="70" rx="5"></rect>
+                    <circle fill="url(#linearGradient-1)" cx="57.5" cy="30" r="17.5"></circle>
+                    <circle fill="#333333" cx="54" cy="28" r="2"></circle>
+                    <circle fill="#333333" cx="61" cy="28" r="2"></circle>
+                    <path d="M54,35 C54,35 57.5,38 61,35" stroke="#333333" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+                </g>
+
+                <!-- Person 3 -->
+                <g id="Person-3">
+                    <rect fill="url(#linearGradient-1)" x="85" y="55" width="30" height="55" rx="5"></rect>
+                    <circle fill="url(#linearGradient-1)" cx="100" cy="45" r="15"></circle>
+                    <circle fill="#333333" cx="97" cy="43" r="1.5"></circle>
+                    <circle fill="#333333" cx="103" cy="43" r="1.5"></circle>
+                    <path d="M97,50 C97,50 100,53 103,50" stroke="#333333" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+                </g>
+            </g>
+
+            <!-- Abstract shapes -->
+            <rect id="Abstract-1" fill="#B3E5FC" opacity="0.5" x="10" y="10" width="30" height="30" rx="5"></rect>
+            <circle id="Abstract-2" fill="#B3E5FC" opacity="0.5" cx="220" cy="130" r="20"></circle>
+        </g>
+    </g>
+</svg> 

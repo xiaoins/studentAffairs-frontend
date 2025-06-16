@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="250" height="150" viewBox="0 0 250 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Registration Card Illustration v2</title>
+    <defs>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#80CBC4" offset="0%"></stop>
+            <stop stop-color="#4DB6AC" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Registration-Card-Illustration-v2">
+            <rect id="Background" fill="#E0F2F7" x="0" y="0" width="250" height="150" rx="8"></rect>
+            
+            <!-- Main Scene: Document and Pen -->
+            <g id="Document-and-Pen" transform="translate(60.000000, 30.000000)">
+                <!-- Document -->
+                <rect id="Document" fill="url(#linearGradient-1)" x="0" y="0" width="120" height="90" rx="5"></rect>
+                <rect id="Line-1" fill="#B2DFDB" x="15" y="15" width="90" height="5" rx="2.5"></rect>
+                <rect id="Line-2" fill="#B2DFDB" x="15" y="30" width="70" height="5" rx="2.5"></rect>
+                <rect id="Line-3" fill="#B2DFDB" x="15" y="45" width="80" height="5" rx="2.5"></rect>
+                
+                <!-- Pen -->
+                <rect id="Pen" fill="#00BFA5" transform="translate(110.000000, 70.000000) rotate(45.000000) translate(-110.000000, -70.000000) " x="105" y="50" width="10" height="40" rx="3"></rect>
+            </g>
+
+            <!-- Abstract shapes -->
+            <rect id="Abstract-1" fill="#B2DFDB" opacity="0.5" x="10" y="120" width="40" height="20" rx="5"></rect>
+            <circle id="Abstract-2" fill="#B2DFDB" opacity="0.5" cx="230" cy="20" r="15"></circle>
+        </g>
+    </g>
+</svg> 

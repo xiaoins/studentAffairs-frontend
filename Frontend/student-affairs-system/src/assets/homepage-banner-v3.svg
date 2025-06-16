@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920" height="400" viewBox="0 0 1920 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Homepage Banner Illustration v4 - Cartoon People</title>
+    <defs>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#4A90E2" offset="0%"></stop>
+            <stop stop-color="#5356EC" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#A8E063" offset="0%"></stop>
+            <stop stop-color="#56AB2F" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#FDD835" offset="0%"></stop>
+            <stop stop-color="#FFB300" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-4">
+            <stop stop-color="#FF8A65" offset="0%"></stop>
+            <stop stop-color="#FF5722" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage-Banner-v4">
+            <rect id="Background" fill="url(#linearGradient-1)" x="0" y="0" width="1920" height="400"></rect>
+            
+            <!-- Grid Overlay -->
+            <g id="Grid" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="1">
+                <line x1="0" y1="100" x2="1920" y2="100"></line>
+                <line x1="0" y1="200" x2="1920" y2="200"></line>
+                <line x1="0" y1="300" x2="1920" y2="300"></line>
+                <line x1="300" y1="0" x2="300" y2="400"></line>
+                <line x1="600" y1="0" x2="600" y2="400"></line>
+                <line x1="900" y1="0" x2="900" y2="400"></line>
+                <line x1="1200" y1="0" x2="1200" y2="400"></line>
+                <line x1="1500" y1="0" x2="1500" y2="400"></line>
+            </g>
+
+            <!-- Abstract Shapes - Left -->
+            <circle fill="url(#linearGradient-4)" opacity="0.8" cx="200" cy="150" r="80"></circle>
+
+            <!-- Abstract Shapes - Right -->
+            <path d="M1920,0 L1600,0 C1700,100 1700,200 1600,300 L1920,300 Z" fill="url(#linearGradient-3)" opacity="0.8"></path>
+            <circle fill="url(#linearGradient-2)" opacity="0.7" cx="1700" cy="350" r="50"></circle>
+            <path d="M1300,0 C1350,50 1400,50 1450,0 Z" fill="#FFFFFF" opacity="0.1" transform="translate(1375.000000, 25.000000) rotate(45.000000) translate(-1375.000000, -25.000000) "></path>
+
+            <!-- Main Illustration Group - Cartoon Students -->
+            <g id="Cartoon-Students" transform="translate(1300.000000, 100.000000)">
+                <!-- Student 1 (left) -->
+                <g id="Student-1">
+                    <rect fill="#FFFFFF" x="0" y="50" width="40" height="100" rx="10"></rect>
+                    <circle fill="#FFFFFF" cx="20" cy="40" r="20"></circle>
+                    <circle fill="#333333" cx="15" cy="38" r="2"></circle>
+                    <circle fill="#333333" cx="25" cy="38" r="2"></circle>
+                    <path d="M15,45 C15,45 25,48 35,45" stroke="#333333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+                    <path d="M20,60 L20,70 L30,70 L30,60 Z" fill="#F6B93B"></path>
+                </g>
+                
+                <!-- Student 2 (middle) -->
+                <g id="Student-2">
+                    <rect fill="#FFFFFF" x="60" y="30" width="50" height="120" rx="10"></rect>
+                    <circle fill="#FFFFFF" cx="85" cy="20" r="25"></circle>
+                    <circle fill="#333333" cx="78" cy="18" r="3"></circle>
+                    <circle fill="#333333" cx="92" cy="18" r="3"></circle>
+                    <path d="M78,28 C78,28 85,32 92,28" stroke="#333333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+                    <path d="M70,50 L70,60 L90,60 L90,50 Z" fill="#F6B93B"></path>
+                </g>
+
+                <!-- Student 3 (right) -->
+                <g id="Student-3">
+                    <rect fill="#FFFFFF" x="130" y="60" width="40" height="90" rx="10"></rect>
+                    <circle fill="#FFFFFF" cx="150" cy="50" r="20"></circle>
+                    <circle fill="#333333" cx="145" cy="48" r="2"></circle>
+                    <circle fill="#333333" cx="155" cy="48" r="2"></circle>
+                    <path d="M145,55 C145,55 155,58 165,55" stroke="#333333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+                    <path d="M140,70 L140,80 L160,80 L160,70 Z" fill="#F6B93B"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg> 

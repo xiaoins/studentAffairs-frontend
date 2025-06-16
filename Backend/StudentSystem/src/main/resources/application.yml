@@ -1,0 +1,27 @@
+server:
+  port: 8081
+
+spring:
+  #配置数据库连接信息与数据库类型
+  application:
+    name: student_management
+  #配置数据连接信息
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource #配置当前要使用的数据源的操作类型
+
+
+    driver-class-name: com.mysql.jdbc.Driver #配置MySQL的驱动程序类
+    url: jdbc:mysql://localhost:3306/student_management?
+    username: root
+    password: sulei1124
+  devtools:
+    restart:
+      exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
+#MyBatis配置
+mybatis:
+  type-aliases-package: com.sulei.pojo
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
